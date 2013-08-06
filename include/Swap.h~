@@ -1,0 +1,6 @@
+#ifndef SWAP_H_SWAP_H_
+#define SWAP_H_SWAP_H_
+
+void swap(int &a, int &b);
+
+#endif

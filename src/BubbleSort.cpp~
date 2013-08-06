@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "Swap.h"
 #include "BubbleSort.h"
-#include "PrintArray.h"
 
 int main(int argc, char *argv[])
 {
