@@ -1,5 +1,4 @@
-#include "Swap.h"
-#include "MergeSort.h"
+#include "QuickSort.h"
 #include "PrintArray.h"
 
 int main(int argc, char *argv[])
@@ -9,7 +8,7 @@ int main(int argc, char *argv[])
 	printf("before sort:\n");
 	printarray(array, 10);
 	
-	MergeSort(array, 0, 9);
+	QuickSort(array, 0, 9);
 	
 	printf("afte sort:\n");
 	printarray(array, 10);

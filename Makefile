@@ -8,7 +8,8 @@ PROGRAMS = BubbleSort_Demo \
 		   InsertSort_Demo \
 		   SelectSort_Demo \
 		   ShellSort_Demo  \
-		   MergeSort_Demo
+		   MergeSort_Demo  \
+		   QuickSort_Demo
 
 all: $(PROGRAMS)
 

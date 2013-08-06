@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	int array[] = {10, 9, 4, 3, 6, 2, 8, 1, 7, 5};
 	
-	printf("befor bubble sort:\n");
+	printf("before bubble sort:\n");
 	printarray(array, 10);
 	
 	BubbleSort(array, 10);
