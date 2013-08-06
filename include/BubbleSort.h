@@ -9,16 +9,24 @@ bool BubbleSort(int *array, const int n)
 	{
 		return false;
 	}
-	
-	for (int i = 0; i < n; ++i)
+
+	bool bFlag = true;
+	int N = n;
+
+	while (bFlag)
 	{
-		for (int j = 1; j < (n - i); ++j)
+		bFlag = false;
+
+		for (int j = 1; j < N; ++j)
 		{
 			if (array[j] < array[j - 1])
 			{
+				bFlag = true;
 				swap(array[j], array[j - 1]);
 			}
 		}
+
+		--N;
 	}
 	
 	return true;

@@ -4,7 +4,11 @@ CPP = g++
 CFLAGS = -g -Wall 
 SRCDIR = ./src
 INCLUDEDIR = -I./include
-PROGRAMS = BubbleSort
+PROGRAMS = BubbleSort_Demo \
+		   InsertSort_Demo \
+		   SelectSort_Demo \
+		   ShellSort_Demo  \
+		   MergeSort_Demo
 
 all: $(PROGRAMS)
 
@@ -12,4 +16,4 @@ all: $(PROGRAMS)
 	$(CPP) $(CFLAGS) -o $@ $< $(INCLUDEDIR) $(LIBS)
 
 clean:
-	rm -rf $(PROGRAMS) *.DSYM
+	rm -rf $(PROGRAMS)

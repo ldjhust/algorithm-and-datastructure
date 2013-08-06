@@ -1,6 +1,8 @@
 #ifndef PRINTARRAY_H_PRINTARRAY_H_
 #define PRINTARRAY_H_PRINTARRAY_H_
 
+#include <stdio.h>
+
 bool printarray(const int *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
