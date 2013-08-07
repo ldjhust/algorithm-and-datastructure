@@ -13,7 +13,8 @@ PROGRAMS = BubbleSort_Demo   \
 		   MaxHeapSort_Demo  \
 		   BTPreTravelsal_Demo \
 		   BTInTravelsal_Demo  \
-		   BTPostTravelsal_Demo
+		   BTPostTravelsal_Demo \
+		   BSearch_Demo
 
 all: $(PROGRAMS)
 
