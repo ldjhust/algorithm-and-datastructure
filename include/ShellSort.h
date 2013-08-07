@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include "Swap.h"
 
-bool ShellSort(int *array, const int n)
+template<typename T>
+bool ShellSort(T *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
 	{
@@ -22,7 +23,7 @@ bool ShellSort(int *array, const int n)
 				continue;
 			}
 
-			int tmp = array[i];
+			T tmp = array[i];
 
 			for (int j = i - gap; (j >= 0) && (array[j] > tmp); j -= gap)
 			{

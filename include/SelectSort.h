@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include "Swap.h"
 
-bool SelectSort(int *array, const int n)
+template<typename T>
+bool SelectSort(T *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
 	{

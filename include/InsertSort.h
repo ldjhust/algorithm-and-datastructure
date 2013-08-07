@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include "Swap.h"
 
-bool InsertSort(int *array, const int n)
+template<typename T>
+bool InsertSort(T *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
 	{
@@ -18,7 +19,7 @@ bool InsertSort(int *array, const int n)
 			continue;
 		}
 
-		int tmp = array[i];
+		T tmp = array[i];
 
 		for (int j = i - 1; (j >= 0) && (array[j] > tmp); --j)
 		{

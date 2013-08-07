@@ -4,14 +4,15 @@
 #include <stdio.h>
 #include <malloc.h>
 
-bool MergeArray(int *array, const int start, const int mid, const int end)
+template<typename T>
+bool MergeArray(T *array, const int start, const int mid, const int end)
 {
 	if ((NULL == array) || (start < 0) || (start > mid) || (mid > end))
 	{
 		return false;
 	}
 
-	int *pArr = NULL;
+	T *pArr = NULL;
 
 	if (NULL == (pArr = (int *)malloc((end - start + 1) * sizeof(int))))
 	{
@@ -65,7 +66,8 @@ bool MergeArray(int *array, const int start, const int mid, const int end)
 	return true;	
 }
 
-bool MergeSort(int *array, const int start, const int end)
+template<typename T>
+bool MergeSort(T *array, const int start, const int end)
 {
 	if ((NULL == array) || (start < 0) || (start > end))
 	{

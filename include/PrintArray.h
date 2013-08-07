@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 
-bool printarray(const int *array, const int n)
+template<typename T>
+bool printarray(const T *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
 	{

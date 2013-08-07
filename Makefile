@@ -3,13 +3,17 @@ CC = gcc
 CPP = g++
 CFLAGS = -g -Wall 
 SRCDIR = ./src
-INCLUDEDIR = -I./include
-PROGRAMS = BubbleSort_Demo \
-		   InsertSort_Demo \
-		   SelectSort_Demo \
-		   ShellSort_Demo  \
-		   MergeSort_Demo  \
-		   QuickSort_Demo
+INCLUDEDIR = -I ./include
+PROGRAMS = BubbleSort_Demo   \
+		   InsertSort_Demo   \
+		   SelectSort_Demo   \
+		   ShellSort_Demo    \
+		   MergeSort_Demo    \
+		   QuickSort_Demo    \
+		   MaxHeapSort_Demo  \
+		   BTPreTravelsal_Demo \
+		   BTInTravelsal_Demo  \
+		   BTPostTravelsal_Demo
 
 all: $(PROGRAMS)
 

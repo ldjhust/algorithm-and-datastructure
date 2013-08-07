@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 
-bool QuickSort(int *array, const int start, const int end)
+template<typename T>
+bool QuickSort(T *array, const int start, const int end)
 {
 	if ((NULL == array) || (start < 0))
 	{
@@ -15,7 +16,7 @@ bool QuickSort(int *array, const int start, const int end)
 		return true;
 	}
 
-	int tmp = array[start];
+	T tmp = array[start];
 	int i = start;
 	int j = end;
 

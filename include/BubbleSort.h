@@ -1,9 +1,11 @@
 #ifndef BUBBLESORT_H_BUBBLESORT_H_
 #define BUBBLESORT_H_BUBBLESORT_H_
 
+#include <stdio.h>
 #include "Swap.h"
 
-bool BubbleSort(int *array, const int n)
+template<typename T>
+bool BubbleSort(T *array, const int n)
 {
 	if ((NULL == array) || (n <= 0))
 	{
