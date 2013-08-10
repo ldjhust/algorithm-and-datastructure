@@ -26,7 +26,8 @@ PROGRAMS = BubbleSort_Demo   \
 		   MergeList_Demo \
 		   ListIntersect_Demo \
 		   ListFirstIntersectNode_Demo \
-		   DeleteListNode_Demo
+		   DeleteListNode_Demo \
+		   ListQuickSort_Demo
 
 all: $(PROGRAMS)
 
