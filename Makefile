@@ -14,7 +14,19 @@ PROGRAMS = BubbleSort_Demo   \
 		   BTPreTravelsal_Demo \
 		   BTInTravelsal_Demo  \
 		   BTPostTravelsal_Demo \
-		   BSearch_Demo
+		   BSearch_Demo \
+		   SubArrayMaxSum_Demo \
+		   FindNumCountBigThanHalfSize_Demo \
+		   FindNumCountMost_Demo \
+		   ListNumOfNode_Demo \
+		   ReverseList_Demo \
+		   ReturnLastKthNodeOfList_Demo \
+		   ReturnMidNodeOfList_Demo \
+		   ReversePrintList_Demo \
+		   MergeList_Demo \
+		   ListIntersect_Demo \
+		   ListFirstIntersectNode_Demo \
+		   DeleteListNode_Demo
 
 all: $(PROGRAMS)
 
