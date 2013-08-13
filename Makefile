@@ -27,7 +27,20 @@ PROGRAMS = BubbleSort_Demo   \
 		   ListIntersect_Demo \
 		   ListFirstIntersectNode_Demo \
 		   DeleteListNode_Demo \
-		   ListQuickSort_Demo
+		   ListQuickSort_Demo \
+		   BTNumNode_Demo \
+		   BTDepth_Demo \
+		   BTLevelorder_Demo \
+		   BTToDList_Demo \
+		   KLevelNodeOfBT_Demo \
+		   NumOfLeafNode_Demo \
+		   isSameStructure_Demo \
+		   isBalanceBT_Demo \
+		   BTMirror_Demo \
+		   BTMaxDistance_Demo \
+		   RebuildBTByPreAndIn_Demo \
+		   GetLastCommonAncestor_Demo \
+		   isCompletedBT_Demo
 
 all: $(PROGRAMS)
 
