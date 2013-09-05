@@ -21,6 +21,8 @@ bool PreorderCreateBT(TreeNode *&root)
 
 	if (0 == nFlag)
 	{
+        root = 0;
+
 		return true;
 	}
 

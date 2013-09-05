@@ -4,57 +4,36 @@
 #include <stdio.h>
 #include "BTDepth.h"
 
-struct Res
+int BTMaxDistance(const TreeNode *root)
 {
-	int leftDistance;
-	int rightDistance;
-	int MaxDistance;
-};
-
-Res BTMaxDistance(const TreeNode *root)
-{
-	Res res;
-
-	res.leftDistance = 0;
-	res.rightDistance = 0;
-	res.MaxDistance = 0;
-
 	if (NULL == root)
 	{
-		return res;
+		return 0;
 	}
 
-	Res	leftRes = BTMaxDistance(root->left);
-	Res rightRes = BTMaxDistance(root->right);
+	int leftDistance = BTMaxDistance(root->left);
+	int rightDistance = BTMaxDistance(root->right);
 
 	int leftDepth = BTDepth(root->left);
 	int rightDepth = BTDepth(root->right);
 	int distance = leftDepth + rightDepth + 1;
 
-	if (leftRes.MaxDistance > rightRes.MaxDistance)
+	if (leftDistance > rightDistance)
 	{
-		if (leftRes.MaxDistance > distance)
+		if (leftDistance > distance)
 		{
-			res.MaxDistance = leftRes.MaxDistance;
+			distance = leftDistance;
 		}
-		else
+    }
+    else
+    {
+		if (rightDistance > distance)
 		{
-			res.MaxDistance = distance;
-		}
-	}
-	else
-	{
-		if (rightRes.MaxDistance > distance)
-		{
-			res.MaxDistance = rightRes.MaxDistance;
-		}
-		else
-		{
-			res.MaxDistance = distance;
+            distance = rightDistance;
 		}
 	}
 
-	return res;
+	return distance;
 }
 
 #endif
