@@ -40,7 +40,8 @@ PROGRAMS = BubbleSort_Demo   \
 		   BTMaxDistance_Demo \
 		   RebuildBTByPreAndIn_Demo \
 		   GetLastCommonAncestor_Demo \
-		   isCompletedBT_Demo
+		   isCompletedBT_Demo \
+		   NonRecursionQuickSort_Demo
 
 all: $(PROGRAMS)
 

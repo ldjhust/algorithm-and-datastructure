@@ -8,9 +8,9 @@ int main(int argc, char *argv[])
 
 	PreorderCreateBT(root);
 
-	Res res = BTMaxDistance(root);
+	int res = BTMaxDistance(root);
 
-	printf("the max distance of your binary tree is %d\n", res.MaxDistance);
+	printf("the max distance of your binary tree is %d\n", res);
 
 	return 0;
 }
